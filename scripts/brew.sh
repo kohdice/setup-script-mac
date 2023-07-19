@@ -25,6 +25,4 @@ if login_check "Have you signed in with your Apple ID?"; then
   cp "${HOME}"/setup/Brewfile "${HOME}"/.Brewfile
   brew bundle --global
   echo
-  echo "=> Done"
-  echo
 fi

@@ -7,7 +7,7 @@ echo "Checking operating system..."
 sleep 1
 
 if [ "$(uname)" = "Darwin" ]; then
-  echo "=> MacOS"
+  echo "=> macOS"
   sleep 1; echo
   echo "---------------------------------------------"
   echo "           Setup has been started.           "
@@ -23,14 +23,11 @@ if [ "$(uname)" = "Darwin" ]; then
     rm -f main.tar.gz
     mv -f setup-script-mac-main "${SCRIPTS_DIR}"
     echo
-    echo "=> Done"
-    echo
   fi
 
-  # Scripts for MacOS
+  # Scripts for macOS
   ${HOME}/setup/scripts/init.sh
   ${HOME}/setup/scripts/brew.sh
-  ${HOME}/setup/scripts/tools.sh
 else
   echo "($(uname)) is not supported."
   exit 1
